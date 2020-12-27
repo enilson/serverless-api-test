@@ -1,0 +1,14 @@
+Git repository url
+https://github.com/enilson/serverless-api-test.git
+
+aws url root for services
+https://2yoyn13fkc.execute-api.us-east-1.amazonaws.com/prod
+
+endpoints:
+  POST - https://2yoyn13fkc.execute-api.us-east-1.amazonaws.com/prod/notes
+  GET - https://2yoyn13fkc.execute-api.us-east-1.amazonaws.com/prod/notes/{id}
+  GET - https://2yoyn13fkc.execute-api.us-east-1.amazonaws.com/prod/notes
+functions:
+  create: notes-api-prod-create
+  get: notes-api-prod-get
+  list: notes-api-prod-list
