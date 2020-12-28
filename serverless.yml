@@ -44,6 +44,7 @@ functions:
       - http:
           path: notes
           method: post
+          authorizer: aws_iam
 
   get:
     # Defines an HTTP API endpoint that calls the main function in get.js
@@ -54,6 +55,7 @@ functions:
       - http:
           path: notes/{id}
           method: get
+          authorizer: aws_iam
   list:
     # Defines an HTTP API endpoint that calls the main function in list.js
     # - path: url path is /notes
@@ -63,4 +65,5 @@ functions:
       - http:
           path: notes
           method: get
+          authorizer: aws_iam
 

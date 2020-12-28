@@ -1,0 +1,12 @@
+npx aws-api-gateway-cli-test `
+--username evnilson82@gmail.com `
+--password Hobbes_D1 `
+--user-pool-id us-east-1_shEHJc493 `
+--app-client-id og3gq7jdobma086jnlucm3tc3 `
+--cognito-region us-east-1 `
+--identity-pool-id us-east-1:5683fec1-fb4e-4c10-8dde-ab749401bab8 `
+--invoke-url https://2yoyn13fkc.execute-api.us-east-1.amazonaws.com/prod `
+--api-gateway-region us-east-1 `
+--path-template /notes `
+--method POST `
+--body '{\"content\":\"hello\",\"attachment\":\"hello.jpg\"}'
